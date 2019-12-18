@@ -22,6 +22,7 @@ def plot_segmentation(images, masks, figsize=(8, 8)):
         plot_mask(img, mask, ax[1])
     plt.tight_layout()
     plt.show()
+    return fig, axes
 
 
 def stratified_multilabel_split(rles, nclasses):
